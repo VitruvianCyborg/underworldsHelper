@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background_texture"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5026042" />
+
+    <TextView
+        android:id="@+id/activation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/pompei"
+        android:text="ACTIVATION"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/activation1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/activation1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/ic_activation_front"
+        android:checked="true"
+        android:textColor="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/activation2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activation"
+        app:srcCompat="@drawable/ic_activation_front" />
+
+    <ToggleButton
+        android:id="@+id/activation2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/ic_activation_front"
+        android:checked="true"
+        android:textColor="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/activation3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activation1"
+        app:srcCompat="@drawable/ic_activation_front" />
+
+    <ToggleButton
+        android:id="@+id/activation3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/ic_activation_front"
+        android:checked="true"
+        android:textColor="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/activation4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activation2"
+        app:srcCompat="@drawable/ic_activation_front" />
+
+    <ToggleButton
+        android:id="@+id/activation4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/ic_activation_front"
+        android:checked="true"
+        android:textColor="#00000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activation3"
+        app:srcCompat="@drawable/ic_activation_front" />
+
+    <TextView
+        android:id="@+id/glory_earned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/pompei"
+        android:text="GLORY EARNED"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/activation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <Button
+        android:id="@+id/glory_earned_image"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/glory_spent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/glory_earned"
+        app:srcCompat="@drawable/ic_glory_front" />
+
+
+    <TextView
+        android:id="@+id/glory_earned_number"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/pompei"
+        android:text="0"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/ic_glory_front"
+        android:textSize="50sp"
+        android:translationZ="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/glory_earned_image"
+        app:layout_constraintEnd_toEndOf="@+id/glory_earned_image"
+        app:layout_constraintStart_toStartOf="@+id/glory_earned_image"
+        app:layout_constraintTop_toTopOf="@+id/glory_earned_image" />
+
+    <TextView
+        android:id="@+id/glory_spent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/pompei"
+        android:text="GLORY SPENT"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/glory_spent_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/glory_earned_image" />
+
+    <Button
+        android:id="@+id/glory_spent_image"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/button_reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/glory_spent"
+        app:srcCompat="@drawable/ic_glory_reverse" />
+
+    <TextView
+        android:id="@+id/glory_spent_number"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/pompei"
+        android:background="@drawable/ic_glory_reverse"
+        android:text="0"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:translationZ="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/glory_spent_image"
+        app:layout_constraintEnd_toEndOf="@+id/glory_spent_image"
+        app:layout_constraintStart_toStartOf="@+id/glory_spent_image"
+        app:layout_constraintTop_toTopOf="@+id/glory_spent_image" />
+
+    <Button
+        android:id="@+id/button_reset"
+        style="@android:style/Widget.DeviceDefault.Button.Small"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/pompei"
+        android:text="RESET GLORY"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/glory_spent_image" />
+
+</android.support.constraint.ConstraintLayout>

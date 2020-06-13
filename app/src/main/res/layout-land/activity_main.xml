@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background_texture"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5026042" />
+
+    <TextView
+        android:id="@+id/activation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/pompei"
+        android:text="ACTIVATION"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/activation1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_activation_front"
+        android:checked="true"
+        android:textColor="#00000000"
+        app:layout_constraintBaseline_toBaselineOf="@+id/activation2"
+        app:layout_constraintEnd_toStartOf="@+id/activation2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_activation_front" />
+
+    <ToggleButton
+        android:id="@+id/activation2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_activation_front"
+        android:checked="true"
+        android:textColor="#00000000"
+        app:layout_constraintBaseline_toBaselineOf="@+id/activation3"
+        app:layout_constraintEnd_toStartOf="@+id/activation3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/activation1"
+        app:srcCompat="@drawable/ic_activation_front" />
+
+    <ToggleButton
+        android:id="@+id/activation3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_activation_front"
+        android:checked="true"
+        android:textColor="#00000000"
+        app:layout_constraintBaseline_toBaselineOf="@+id/activation4"
+        app:layout_constraintEnd_toStartOf="@+id/activation4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/activation2"
+        app:srcCompat="@drawable/ic_activation_front" />
+
+    <ToggleButton
+        android:id="@+id/activation4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_activation_front"
+        android:checked="true"
+        android:textColor="#00000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/activation3"
+        app:layout_constraintTop_toBottomOf="@+id/activation"
+        app:srcCompat="@drawable/ic_activation_front" />
+
+    <TextView
+        android:id="@+id/glory_earned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/pompei"
+        android:text="GLORY EARNED"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/glory_earned_number"
+        app:layout_constraintStart_toStartOf="@+id/glory_earned_number"
+        app:layout_constraintTop_toBottomOf="@+id/activation1" />
+
+    <Button
+        android:id="@+id/glory_earned_image"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_reset"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/glory_earned"
+        app:srcCompat="@drawable/ic_glory_front" />
+
+
+    <TextView
+        android:id="@+id/glory_earned_number"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="@drawable/ic_glory_front"
+        android:fontFamily="@font/pompei"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:translationZ="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/glory_earned_image"
+        app:layout_constraintEnd_toEndOf="@+id/glory_earned_image"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/glory_earned_image"
+        app:layout_constraintTop_toTopOf="@+id/glory_earned_image" />
+
+    <TextView
+        android:id="@+id/glory_spent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/pompei"
+        android:text="GLORY SPENT"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/glory_spent_number"
+        app:layout_constraintStart_toStartOf="@+id/glory_spent_number"
+        app:layout_constraintTop_toBottomOf="@+id/activation4" />
+
+    <Button
+        android:id="@+id/glory_spent_image"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_reset"
+        app:layout_constraintTop_toBottomOf="@+id/glory_spent"
+        app:srcCompat="@drawable/ic_glory_reverse" />
+
+    <TextView
+        android:id="@+id/glory_spent_number"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="@drawable/ic_glory_reverse"
+        android:fontFamily="@font/pompei"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:translationZ="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/glory_spent_image"
+        app:layout_constraintEnd_toEndOf="@+id/glory_spent_image"
+        app:layout_constraintStart_toStartOf="@+id/glory_spent_image"
+        app:layout_constraintTop_toTopOf="@+id/glory_spent_image" />
+
+    <Button
+        android:id="@+id/button_reset"
+        style="@android:style/Widget.DeviceDefault.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/pompei"
+        android:text="RESET\nGLORY"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/glory_spent_image"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/glory_earned_image"
+        app:layout_constraintTop_toBottomOf="@+id/glory_earned" />
+
+</android.support.constraint.ConstraintLayout>
